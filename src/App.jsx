@@ -1,5 +1,6 @@
 import Navbar from '../components/Navbar'
 import Card from '../components/Card'
+import Hero from '../components/Hero'
 import data from '../data'
 
 function App() {
@@ -15,9 +16,12 @@ function App() {
   return (
       <div>
           <Navbar />
-          <section className="cards-list">
-              {cards}
-          </section>
+          <div className="container">
+            <Hero />
+            <section className="cards-list">
+                {cards}
+            </section>
+        </div>
       </div>
   )
 }
